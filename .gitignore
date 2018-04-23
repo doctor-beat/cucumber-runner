@@ -237,13 +237,13 @@ local.properties
 *.retry
 
 # Ignore Vagrant customization file
-Customfile
+#Customfile
 
 # Ignore files persisted between VM rebuilds
 /home
 
 # Ignore Nugrant config
-/.vagrantuser
+#/.vagrantuser
 
 ### Project specific ###
 

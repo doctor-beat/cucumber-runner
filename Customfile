@@ -1,0 +1,19 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Rename to Customfile to override Vagrant configuration
+
+# For example the following will increase the RAM to 8 GB and allocate 4 CPUs:
+# config.vm.provider "virtualbox" do |vb|
+#   vb.memory = 8192
+#   vb.cpus = 4
+# end
+
+
+  config.vm.synced_folder '../kahuna-acc-tests', 'kahuna-acc-tests',
+		type: "nfs",
+		#nfs_udp: false,
+		#nfs_version: 4,
+		mount_options: [ "nolock", "fsc" ]
+
+

@@ -292,7 +292,7 @@ SCRIPT
 
   # Run Ansible from the Vagrant VM
   config.vm.provision 'ansible_local' do |ansible|
-    ansible.playbook = 'provisioning/playbook.yml'
+    ansible.playbook = 'provisioning/main.yml'		#rove, apr18: updated
     ansible.galaxy_role_file = 'provisioning/requirements.yml'
 
     # Use alt-galaxy to download roles instead of ansible-galaxy.

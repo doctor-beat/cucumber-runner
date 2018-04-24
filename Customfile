@@ -10,7 +10,7 @@
 # end
 
 
-  config.vm.synced_folder '../kahuna-acc-tests', 'kahuna-acc-tests',
+  config.vm.synced_folder '../kahuna-acc-tests', '/home/vagrant/kahuna-acc-tests',
 		type: "nfs",
 		#nfs_udp: false,
 		#nfs_version: 4,

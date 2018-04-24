@@ -3,6 +3,9 @@
 
 # ansible_local requires version >= 1.8.4 to work stably
 Vagrant.require_version '>= 1.8.4'
+#if (Vagrant.version < '2.0.0') 
+  Vagrant::DEFAULT_SERVER_URL.replace('https://vagrantcloud.com')
+#end
 
 required_plugins = %w[vagrant-reload vagrant-persistent-storage vagrant-triggers vagrant-vbguest vagrant-proxyconf nugrant]
 plugins_to_install = required_plugins.reject { |plugin| Vagrant.has_plugin? plugin }

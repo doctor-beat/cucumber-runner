@@ -65,3 +65,5 @@
   name: gantsign.xdesktop
 - src: gantsign.zram-config
   version: '1.2.0'
+#Rove, added:
+- src: arknoll.firefox

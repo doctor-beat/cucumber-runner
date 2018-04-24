@@ -9,11 +9,18 @@
 #   vb.cpus = 4
 # end
 
+  # Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  config.vm.network 'private_network', ip: '192.168.33.10'
 
-  config.vm.synced_folder '../kahuna-acc-tests', '/home/vagrant/kahuna-acc-tests',
-		type: "nfs",
+  #modify the line below to set a different location of your cucumber project (path on the host)
+  config.vm.synced_folder '../kahuna-acc-tests', '/home/vagrant/kahuna-acc-tests'
+  #,
+#		type: "nfs",
 		#nfs_udp: false,
 		#nfs_version: 4,
-		mount_options: [ "nolock", "fsc" ]
+#		mount_options: [ "nolock", "fsc" ]
 
 
+	#fix for tty error:
+   config.ssh.shell="/bin/bash"

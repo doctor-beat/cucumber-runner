@@ -189,6 +189,9 @@ Vagrant.configure(2) do |config|
     # Customize CPU settings
     vb.cpus = config.user.virtualbox.cpus
 
+	#rove, may 18: https://github.com/chef/bento/issues/688
+	vb.customize ["modifyvm", :id, "--cableconnected1", "on"]
+
     # Customize graphics settings
     vb.customize ['modifyvm', :id, '--vram', config.user.virtualbox.vram]
     vb.customize ['modifyvm', :id, '--accelerate3d', config.user.virtualbox.accelerate3d]

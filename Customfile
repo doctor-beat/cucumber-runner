@@ -13,14 +13,12 @@
   # using a specific IP.
   config.vm.network 'private_network', ip: '192.168.33.10'
 
-  #modify the line below to set a different location of your cucumber project (path on the host)
   config.vm.synced_folder '../kahuna-acc-tests', '/home/vagrant/kahuna-acc-tests'
-  #,
-#		type: "nfs",
-		#nfs_udp: false,
-		#nfs_version: 4,
+#		type: "smb"
+#		nfs_udp: false,
+#		nfs_version: 4,
 #		mount_options: [ "nolock", "fsc" ]
 
-
-	#fix for tty error:
+#	fix for tty error:
    config.ssh.shell="/bin/bash"
+   

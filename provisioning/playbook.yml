@@ -272,8 +272,8 @@
         - golang
       users:
         - username: vagrant
-          visual_studio_code_extensions:
-            - lukehoban.Go
+#          visual_studio_code_extensions:
+#            - lukehoban.Go
 
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij

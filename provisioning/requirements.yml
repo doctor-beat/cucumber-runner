@@ -67,3 +67,7 @@
   version: '1.2.0'
 #Rove, added:
 - src: arknoll.firefox
+- src: 030.firefox
+- src: https://github.com/doctor-beat/ansible-role-firefox/archive/1.0.1.tar.gz
+  name: doctor-beat.firefox
+- src: viper233.firefox-esr
